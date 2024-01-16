@@ -1,0 +1,135 @@
+body {
+    background-color:beige;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-blend-mode: color;
+  }
+  
+  /* Menu - Heading */
+  .menu-h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color:brown;
+  }
+  
+  /* section - link */
+  .menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  }
+  
+  /* Remove underline */
+  .section-link{
+    text-decoration: none;
+    color: green;
+    font-size:20px;
+  }
+  
+   div a:hover {
+            background-color: white; /* Change background color on hover */
+   }
+  
+  /* Setting menu */
+  section {
+    display:flex;
+    justify-content: center;
+    justify-content:space-around;
+    
+  }
+  
+  /* names of cuisines */
+  .sections {
+    color:darkblue;
+    
+  }
+  
+  /* for item and item price */
+   .section-headings{
+    margin-left:-250px;
+     margin-right:-99px;
+    margin-top:50px;
+      color:maroon;
+      display:flex;
+      justify-content:space-between;
+  }
+  
+  /* menu-items */
+  #table-content{
+      margin-left:-250px;
+      margin-right:-100px;
+      color:darkolivegreen;
+      display:flex;
+      justify-content:space-between;    
+  }
+  
+  
+  /* Styling for navigation bar links */
+  
+  nav{
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   background-color:rgb(246, 224, 139);
+   padding: 10px;
+   text-align: center;
+  }
+        nav a {
+            text-decoration: none; /* Remove underlines */
+          
+            padding: 10px 20px; 
+            display: inline-block;
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+  
+        /* Hover effect for navigation bar links */
+        nav a:hover {
+            background-color: white; /* Change background color on hover */
+   }
+  /* arranging the section links in horizontal nav bar */
+  .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-around;  
+  }
+
+  .gif-menu{
+    display:flex;
+    justify-content:right;
+    margin-left:-850px;
+    transform: translate(30%, 30%);
+    transform:rotate(90deg);
+    transform: translateY(60px); 
+}    
+.drink-menu{
+    display:flex;
+    justify-content:right;
+    margin-left:-770px;
+    transform: translate(30%, 30%);
+    transform:rotate(90deg);
+    transform: translateY(60px); 
+}    
+.dessert-menu{
+    display:flex;
+    justify-content:right;
+    margin-left:-750px;
+    transform: translate(30%, 30%);
+    transform:rotate(90deg);
+    transform: translateY(60px); 
+}    
+
+/* On screens that are 600px or less, set the background color*/
+@media screen and (max-width:1000px){
+  body{background-color:lightcoral;}
+}
+
+.button{
+  width: 10%;
+  box-shadow: 0 1px 3px darkgrey, 0 1px 2px gray;
+  margin-left: 1350px;
+}

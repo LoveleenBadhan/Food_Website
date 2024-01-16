@@ -1,0 +1,66 @@
+/* For navigation bar */
+nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color:rgb(246, 224, 139);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for navigation bar links */
+nav a {
+text-decoration: none; /* Remove underlines */
+color: #fff; /* Text color */
+padding: 10px 20px; /* Adjust padding as needed */
+display: inline-block;
+transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for navigation bar links */
+nav a:hover {
+background-color: #555; /* Change background color on hover */
+} 
+
+/* arranging the section links in horizontal nav bar */
+.flex-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:space-around;  
+}
+
+.box{
+    width:350px;  
+}
+
+.img{
+    display:flex;
+    justify-content:right;
+    margin-left:1010px;
+    margin-top: -750px;
+    transform: translate(30%, 30%);
+    transform:rotate(90deg);
+    transform: translateY(60px);
+}
+
+.p{
+    color:crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+} 
+ 
+.h{
+    color:lightseagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+body{
+    background-color: lightgrey;
+}
+
+/* On screens that are 600px or less, set the background color*/
+@media screen and (min-width:900px){
+    body{background-color:lightyellow; }
+}

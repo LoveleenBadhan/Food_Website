@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+      <nav class="flex-container">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="grocery.html">Grocery & Retail</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="contact.html">Contact Us</a>
+       </nav>
+      
+      <style>
+        body {
+  background-color:khaki;
+}
+
+nav{
+    /* Styling for navigation bar links */
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color:rgb(246, 224, 139);
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+          text-decoration: none; /* Remove underlines */
+        
+          padding: 10px 20px; 
+          display: inline-block;
+          transition: background-color 0.3s; /* Smooth transition on hover */
+      }
+
+/* Hover effect for navigation bar links */
+nav a:hover {
+          background-color: white; /* Change background color on hover */
+ }
+/* arranging the section links in horizontal nav bar */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;  
+}
+
+/*page heading*/
+.contact-us{
+  margin-left:55px;
+  margin-top:50px;
+  font-family: 'Open Sans', sans-serif;
+  color:darkcyan;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align:center;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:pink;
+  color:cornflowerblue;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: skyblue;
+}
+
+/* footer-content */
+.add{
+  font-family:'Open Sans', sans-serif;
+  margin-top:7px;
+  margin-left:15px;
+  font-size:10px;
+  display:flex;
+  align-content:left;
+  justify-content:left;
+}
+.p{
+  font-family:'Open Sans', sans-serif;
+  margin-top:7px;
+  margin-left:15px;
+  font-size:10px;
+  display:flex;
+  align-content:center;
+  justify-content:center;
+}
+.h{
+  font-family:'Open Sans', sans-serif;
+  margin-top:7px;
+  margin-left:15px;
+  font-size:10px;
+  display:flex;
+  align-content:right;
+  justify-content:right;
+}
+
+.plus{
+    color:darkgreen;
+    font-size: 50px;
+}
+
+   /* On screens that are 600px or less, set the background color*/
+    @media screen and (min-width:1000px){
+    body{background-color:lightcyan;}
+}
+
+      </style>
+    </head>
+  <body>
+    <h1 class="plus">Checkout Completed!!</h1>
+    <h1 class = "contact-us" align="center"> Contact Us </h1>
+
+    <div>
+  <form action="#">
+    <input type="text" id="fname" name="firstname" placeholder="Enter first name..">
+
+    <input type="text" id="lname" name="lastname" placeholder="Enter last name..">
+    
+    <input type="text" id="contact" name="phone" placeholder="Enter Phone Number">
+    <input type="text" id="message" name="message" placeholder="Message..">
+    <select id="country" name="country">
+      <option value="select">Choose Country</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+     
+  </body>
+  
+  <footer>
+    <div >
+    <h5 class="add"> Postal Address </h5>
+    <p class="add"> 
+      XYZ Road, Scarborough, ON M!F 2A3 <br>
+      ABC Avenue, Etobicoke, ON L&F 6D!
+    </p><br>
+      <h5 class="p"> Contact Info </h5>
+    <p class="p"> 
+     Phone No: +1(XYZ)ABC-QRST <br>
+     Fax: +1(OUTE)ASD-POID
+     </p><br>
+      <h5 class="h"> Email </h5>
+    <p class="h"> 
+     desi_tadk12@gmail.com <br>
+      desi_tadka12@icloud.com
+     </p>
+    </div>
+
+  </footer>
+</html>

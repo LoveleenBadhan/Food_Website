@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Stores</title>
+    <nav class="flex-container">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="grocery.html">Grocery & Retail</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="contact.html">Contact Us</a>
+       </nav>
+    <style>
+        
+  nav{
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   background-color:rgb(246, 224, 139);
+   padding: 10px;
+   text-align: center;
+  }
+        nav a {
+            text-decoration: none; /* Remove underlines */
+          
+            padding: 10px 20px; 
+            display: inline-block;
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+  
+        /* Hover effect for navigation bar links */
+        nav a:hover {
+            background-color: white; /* Change background color on hover */
+   }
+  /* arranging the section links in horizontal nav bar */
+  .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;  
+  }  
+
+        body{
+            background-color:lightgreen;
+            color:midnightblue;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button{
+            width: 20%;
+            box-shadow: 0 1px 3px darkgrey, 0 1px 2px gray;
+            margin-left: 600px;
+        }
+
+        #para{
+            color:darkcyan;
+            font-size: 30px;
+        }
+        /* On screens that are 600px or less, set the background color*/
+        @media screen and (min-width:600px){
+        body{background-color:lightblue;}
+    }
+
+    </style>
+</head>
+<body><br>
+        <div class="store">
+            <img src="frills.png" width="1520px" height="300px">
+            
+            <p id="para" align="center">Welcome to No Frills grocery store. Browse our selection and add items to your cart.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="brocolli.jpg" height="100px" width="100px" class="product-image">
+                    <h3>Brocolli</h3>
+                    <p>$ 4.89</p>
+                    <button onclick="addToCart('Brocolli', 4.89)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="apples.jpeg" height="100px" width="100px" class="product-image">
+                    <h3>Apple</h3>
+                    <p>$1.89</p>
+                    <button onclick="addToCart('Apples', 1.89)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="meatballs.webp" height="100px" width="100px" class="product-image">
+                    <h3>Meatballs</h3>
+                    <p>$8.56</p>
+                    <button onclick="addToCart('Meatballs', 8.56)">Add to Cart</button>
+                </div>
+               
+                <div class="product-card">
+                    <img src="milk.jpg"height="100px" width="100px"  class="product-image">
+                    <h3>Milk</h3>
+                    <p>$5.89</p>
+                    <button onclick="addToCart('Milk', 5.89)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="beans.jpeg" height="100px" width="100px" class="product-image">
+                    <h3>Beans</h3>
+                    <p>$6.56</p>
+                    <button onclick="addToCart('Beans', 6.56)" >Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="frozen.webp" height="100px" width="100px" class="product-image">
+                    <h3>Frozen Vegies</h3>
+                    <p>$7.00</p>
+                    <button onclick="addToCart('Frozen Vegies', 7.00)" >Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="noodles.jpeg" height="100px" width="100px" class="product-image">
+                    <h3>Noodles</h3>
+                    <p>$5.23</p>
+                    <button onclick="addToCart('Noodles', 5.23)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="rice.png" height="100px" width="100px" class="product-image">
+                    <h3>Rice</h3>
+                    <p>$6.56</p>
+                    <button onclick="addToCart('Rice', 6.56)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="store">
+            <img src="shoppers.jpeg" height="300px" width="1500px">
+            <p id="para" align="center">Welcome to Shoppers Drug Mart. Browse our selection and add items to your cart.</p>
+        
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="cerave.jpeg" height="100px" width="100px" class="product-image">
+                    <h3>Cera Ve</h3>
+                    <p>$ 18.89</p>
+                    <button onclick="addToCart('Cera Ve', 18.89)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="tide.jpeg" height="100px" width="100px" class="product-image">
+                    <h3>Tide</h3>
+                    <p>$9.89</p>
+                    <button onclick="addToCart('Tide', 9.89)">Add to Cart</button>
+                </div>
+
+                 <div class="product-card">
+                    <img src="ginger.jpg" height="100px" width="100px" class="product-image">
+                    <h3>Ginger Ale</h3>
+                    <p>$5.45</p>
+                    <button onclick="addToCart('Ginger Ale', 5.45)">Add to Cart</button>
+                </div>
+               
+                <div class="product-card">
+                    <img src="garbagebag.jpg" height="100px" width="100px" class="product-image">
+                    <h3>Garbage Bag</h3>
+                    <p>$6.00</p>
+                    <button onclick="addToCart('Garbage Bag', 6.00)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="foundation.jpg" height="100px" width="100px" class="product-image">
+                    <h3>Foundation</h3>
+                    <p>$15.89</p>
+                    <button onclick="addToCart('Foundatin', 15.89)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="colgate.jpg" height="100px" width="100px" class="product-image">
+                    <h3>Colgate</h3>
+                    <p>$5.89</p>
+                    <button onclick="addToCart('Colgate', 5.89)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="toys.jpg" height="100px" width="100px" class="product-image">
+                    <h3>Soft Toys</h3>
+                    <p>$6.29</p>
+                    <button onclick="addToCart('Soft Toys', 6.29)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="spray.jpeg" height="100px" width="100px" class="product-image">
+                    <h3>Pain Reliever Spray</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Pain Reliever Spray', 10.00)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <script>
+            // Shopping cart array to store selected items
+            let shoppingCart = [];
+    
+            // Function to add items to the cart
+            function addToCart(productName, price) {
+                shoppingCart.push({ name: productName, price: price });
+                alert('Product added to cart!');
+            }
+        </script>
+        <a href="checkout.html">
+            <button class="button">Checkout</button>
+        </a>
+</body>
+</html>

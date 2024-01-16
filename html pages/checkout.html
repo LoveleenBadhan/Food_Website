@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+       <nav class="flex-container">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="grocery.html">Grocery & Retail</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="contact.html">Contact Us</a>
+       </nav>
+</head>
+   <body>
+      <h2 class="p">Checkout</h2>
+      <form action="contact.html">
+       <pre><input type="text" id="fname" name="firstname" placeholder="First Name" autofocus>  <input type="text" id="lname" name="lastname" placeholder="Last Name"></pre>
+       <input class="box" type="text" id="email" name="email" placeholder="Email Address" required>
+       <h2 class="p">Billing Address</h2>
+       <input class="box" type="text" id="street" name="street" placeholder="Street">
+       <pre><input type="text" id="city" name="city" placeholder="City">  <input type="text" id="zip" name="zip" placeholder="Zip Code" required></pre>
+       <h2 class="p">Your payment information</h2>
+       <label for="payment type" class="h">Payment Type</label><br>
+       <input type="radio" name="radio" value="Visa">Visa
+       <input type="radio" name="radio" value="Debit">Debit
+       <input type="radio" name="radio" value="UPI">UPI
+       <input type="radio" name="radio" value="Google Pay">Google Pay<br><br>
+       <input type="text" id="cardnum" name="cardnumber" placeholder="Card Number" required>
+       <pre><select id="month" name="month">
+        <option value="select">Month</option>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+      </select>   <input type="text" name="year" value="year" placeholder="Year"></pre>
+      <input type="text" name="cvv" value="cvv" placeholder="CVV" required>
+      <p class="h">By clicking checkout now yor agree the <strong>Terms of Services</strong> and<strong> Privacy Policy</strong></p>
+      <a href="contact.html"></a><button class="button">Checkout Now</button></a>
+      </form><br>
+      <img class="img" src="foodbg.jpg" height="900px" width="500px"> 
+
+   </body>
+</html>
